@@ -25,4 +25,4 @@ function countdown(targetDate) {
 }
 
 // Когда будешь менять дату:
-countdown("July 2, 2024 00:00:00");
+countdown("June 2, 2024 00:00:00");
