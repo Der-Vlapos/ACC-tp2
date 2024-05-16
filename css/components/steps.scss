@@ -1,0 +1,107 @@
+.steps{
+    background-color: $darkBlue;
+    color: $white;
+    padding: rem(40px) 0 rem(100px);
+    position: relative;
+
+    &::after{
+        content: "";
+        height: 30%;
+        aspect-ratio: 146 / 100;
+        position: absolute;
+        background: url(../../images/scheme--white.svg) center center no-repeat ;
+        background-size: contain;
+        top: 40%;
+        left: 86%;
+        transform: scaleX(-1);
+    }
+
+    &::before{
+        content: "";
+        height: 30%;
+        aspect-ratio: 146 / 100;
+        position: absolute;
+        background: url(../../images/scheme--white.svg) center center no-repeat ;
+        background-size: contain;
+        bottom: 0;
+        right: 85%;
+    }
+}
+
+.steps__dec{
+    aspect-ratio: 987/530;
+    position: absolute;
+    background: url(../../images/shell--bg.svg) center center no-repeat ;
+    background-size: contain;
+    z-index: 0;
+    &:nth-of-type(1){
+        width: 25%;
+        top: rem(-1px);
+        left: 0;
+    }
+    &:nth-of-type(2){
+        width: 20%;
+        bottom: rem(-1px);
+        right: 0;
+        transform: scaleY(-1);
+    }
+    
+}
+
+.steps__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+
+.steps__list{
+    width: 100%;
+    font-size: rem(32px);
+}
+
+.steps__item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: rem(45px);
+    &:nth-of-type(1){
+        justify-content: flex-end;
+    }
+    &:nth-of-type(2){
+        justify-content: flex-start;
+    }
+    &:nth-of-type(3){
+        justify-content: center;
+        margin-bottom: 0;
+    }
+}
+
+.steps__title{
+    margin-bottom: rem(70px);
+    margin-left: rem(20px);
+}
+
+.steps__text{
+    max-width: 52%;
+}
+
+.steps__num{
+    margin-right: rem(20px);
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-size: rem(32px);
+}
+
+.borbox{
+    border: rem(1px) solid $white;
+    padding: rem(2px) rem(30px);
+    border-radius: rem(50px);
+}
+
+.highlight--blue{
+    background-color: blue;
+}

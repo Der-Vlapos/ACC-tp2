@@ -1,0 +1,33 @@
+@function rem($px){
+    @return $px / $baseFontSize + 0rem;
+}
+
+@mixin pre-tablets{
+    @media screen and (max-width: $pre-tablets){
+        @content;
+    }
+}
+
+@mixin pre2-tablets{
+    @media screen and (max-width: $pre2-tablets){
+        @content;
+    }
+}
+
+@mixin lachange{
+    @media screen and (max-width: $lachange){
+        @content;
+    }
+}
+
+@mixin tablets{
+    @media screen and (max-width: $tablets){
+        @content;
+    }
+}
+
+@mixin phones{
+    @media screen and (max-width: $phones){
+        @content;
+    }
+}

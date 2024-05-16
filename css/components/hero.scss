@@ -1,0 +1,227 @@
+.hero{
+    background-color: $white;
+    min-height: 120vh;
+    position: relative;
+
+    &::before{
+        content:"";
+        height: rem(270px);
+        aspect-ratio: 146 / 100;
+        position: absolute;
+        top: rem(-50px);
+        left: rem(-60px);
+        background: url(../../images/scheme.svg) center  no-repeat;
+        background-size: cover;
+    }
+
+    &::after{
+        content:"";
+        height: 15%;
+        aspect-ratio: 1.46 / 1;
+        position: absolute;
+        top: 40%;
+        left: 85%;
+        background: url(../../images/scheme.svg) center  no-repeat;
+        background-size: cover;
+        transform: scaleX(-1) scaleY(-1);
+    }
+}
+
+.hero__dec--star{
+    width: 25%;
+    aspect-ratio: 1.0375 / 1;
+    position: absolute;
+    background: url(../../images/star_4e.svg) center  no-repeat;
+    background-size: cover;
+    
+    &:nth-last-of-type(1){
+        bottom: -4%;
+        right: -12%;
+    }
+    
+    &:nth-last-of-type(2){
+        width: 22%;
+        bottom: 15%;
+        left: -10%;
+        transform: scaleX(-1);
+    }
+}
+
+.hero__container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hero__naming{
+    letter-spacing: rem(2px);
+    display: flex;
+    justify-content: space-around;
+    margin-right: rem(30px);
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    @include lachange{
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+
+    &::after{
+        content: "";
+        width: rem(300px);
+        height: rem(500px);
+        position: absolute;
+        bottom: rem(-300px);
+        left: rem(-150px);
+        background: url(../../images/arrow.svg) center center no-repeat ;
+        @include lachange{
+            display: none;
+        }
+    }
+}
+
+.hero__name{
+    color: $darkBlue;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: rem(120px);
+
+    @include lachange{
+        font-size: rem(160px);
+    }
+
+    &--mid{
+        padding: rem(2px) rem(70px) rem(2px) rem(60px);
+        color: blue;
+        z-index: 2;
+        border: rem(2px) solid blue;
+        border-radius: rem(150px);
+    }
+}
+
+.hero__block{
+    padding: rem(60px) rem(40px);
+    min-height: 60vh;
+    display: flex;
+    &:nth-child(1){
+        flex-direction: row;
+        justify-content: space-around;
+        margin: rem(60px) rem(0px) rem(80px);
+
+        @include lachange{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &:nth-child(2){
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.hero__timer{
+    letter-spacing: rem(2px);
+    height: auto;
+    position: relative;
+}
+
+.hero__text{
+    font-weight: 400;
+    font-style: italic;
+    font-size: rem(32px);
+    max-width: rem(900px);
+    border: rem(1px) solid $darkBlue;
+    padding: rem(40px);
+    letter-spacing: rem(1.2px);
+    margin-bottom: rem(40px);
+}
+
+.timer{
+    height: 100%;
+    padding: rem(100px);
+    background-color: $darkBlue;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    
+    &--el1{
+        position: absolute;
+        bottom: rem(-150px);
+        left: -27%;
+        width: rem(300px);
+        height: rem(300px);
+        background: url(../../images/star_blue_nobg.svg) center center no-repeat ;
+        background-size:cover;
+        z-index: 1;
+        
+        @include lachange{
+            // display: none;
+        }
+    }
+
+    &--el2{
+        position: absolute;
+        top: rem(-280px);
+        right: -43%;
+        width: rem(600px);
+        height: rem(600px);
+        background: url(../../images/star_blue_bg.svg) center center no-repeat ;
+        background-size:cover;
+
+        @include lachange{
+            // display: none;
+        }
+    }
+}
+
+.timer__title{
+    color: $white;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: rem(48px);
+    position: relative;
+    margin-left: rem(65px);
+    &:nth-child(1){
+        text-align: left;
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: rem(-110px);
+            top: rem(-15px);
+            display:inline-block;
+            margin-right: rem(15px);
+            height: rem(90px);
+            width: rem(90px);
+            background-image: url("../../images/clock.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &:nth-child(2){
+        text-align: right;
+    }
+}
+
+.timer__icon{
+    height: rem(30px);
+    width: rem(30px);
+}
+
+.timer__countdown{
+    text-align: center;
+    color: blue;
+    font-weight: 800;
+    font-size: rem(86px);
+}
+
+.timer__num{
+    display: inline;
+}

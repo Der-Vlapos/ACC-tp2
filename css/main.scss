@@ -1,0 +1,33 @@
+$containerWidth: 1500px;
+$baseFontSize: 32px;
+
+//breakpoints
+$pre-tablets: 1485px;
+$pre2-tablets: 1230px;
+$lachange: 1040px;
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+$darkBlue: #05081D;
+$blue: #389FF1;
+$white: #eaf4f5;
+
+@import "./components/media.scss";
+
+//normalize
+@import "./normalize.css";
+@import "./layout.scss";
+
+
+// setups
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// components
+@import "./components/hero.scss";
+@import "./components/button.scss";
+@import "./components/title.scss";
+@import "./components/steps.scss";
+@import "./components/faq.scss";
+@import "./components/partners.scss";
+@import "./components/footer.scss";
