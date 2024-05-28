@@ -14,8 +14,26 @@
         <div class="maincontent">
 
             <section class="hero">
-                <a href="https://t.me/AlmatyCodeCup" class="hero__btn"><img class="hero__btn-img" src="./images/iconmonstr-telegram-1.svg" alt="Telegram logo"></a>
-                <a href="https://www.instagram.com/acc.rocks?igsh=MWRlbmxrdWJibDg5bQ%3D%3D&utm_source=qr" class="hero__btn"><img class="hero__btn-img" src="./images/iconmonstr-instagram-11.svg" alt="Instagram logo"></a>
+                <ul class="hero__link-list">
+                    <li class="hero__link-list-el">
+                        <a href="https://t.me/AlmatyCodeCup" class="hero__btn"><img class="hero__btn-img"
+                                src="./images/iconmonstr-telegram-1.svg" alt="Telegram logo"></a>
+                    </li>
+                    <li class="hero__link-list-el">
+                        <a href="https://www.instagram.com/acc.rocks?igsh=MWRlbmxrdWJibDg5bQ%3D%3D&utm_source=qr"
+                            class="hero__btn"><img class="hero__btn-img" src="./images/iconmonstr-instagram-11.svg"
+                                alt="Instagram logo"></a>
+                    </li>
+                    <li class="hero__link-list-el">
+                        <a href="#" class="hero__btn" id="langBtn"><img class="hero__btn-img"
+                                src="./images/globe-grid-svgrepo-com.svg" alt="Instagram logo"></a>
+                        <div class="hero__lang" id="langMenu">
+                            <a class="hero__lang-btn" href="#" data-lang="eng">English</a>
+                            <a class="hero__lang-btn" href="#" data-lang="rus">Русский</a>
+                            <a class="hero__lang-btn" href="#" data-lang="kaz">Қазақша</a>
+                        </div>
+                    </li>
+                </ul>
                 <div class="container hero__container">
                     <div class="hero__block">
                         <ul class="hero__naming">
@@ -121,7 +139,9 @@
                             <div class="faq__answer">Каждая команда получает один компьютер и от 8 до 13 задач на 5
                                 часов. Побеждает команда с наибольшим количеством правильно решенных задач, и с
                                 наименьшим штрафным временем за
-                                каждую задачу и неудачные попытки. <a href="https://codeforces.com/contestInvitation/f6319d2ed67a3e9a6d8af5b1b58b2b15cf4c802a" class="faq__link">Прошлогодние задачи
+                                каждую задачу и неудачные попытки. <a
+                                    href="https://codeforces.com/contestInvitation/f6319d2ed67a3e9a6d8af5b1b58b2b15cf4c802a"
+                                    class="faq__link">Прошлогодние задачи
                                     могут быть найдеты тут.</a></div>
                         </li>
                         <li class="faq__item">
@@ -190,12 +210,10 @@
                 <div class="container footer">
                     <img src="./images/footer_logo.svg" alt="footer--logotype" class="footer__logo">
                     <ul class="footer__list">
-                        <li class="footer__item"><a
-                                href="https://drive.google.com/file/d/1S4Aui_t3UmPBT_XuIgPv2_VJP2JHtqst/view?usp=sharing"
+                        <li class="footer__item"><a href="https://bc-pf.org/docs/npa/regulations_codecups.pdf"
                                 class="footer__link button button--black">Положение</a>
                         </li>
-                        <li class="footer__item"><a
-                                href="https://drive.google.com/file/d/1lzK-DrL1c6wo0sfXsrqBj1HkKpLC8PMR/view?usp=sharing"
+                        <li class="footer__item"><a href="https://bc-pf.org/docs/npa/reglament_acc24.pdf"
                                 class="footer__link button button--blue">Регламент</a></li>
                         <li class="footer__item"><a href="#" class="footer__link button button--black">Результат</a>
                         </li>
@@ -223,6 +241,7 @@
     <script src="./scripts/faq-menu.js"></script>
     <script src="./scripts/custom-swiper.js"></script>
     <script src="./scripts/observer.js"></script>
+    <script src="./scripts/lang-change.js"></script>
 </body>
 
 </html>

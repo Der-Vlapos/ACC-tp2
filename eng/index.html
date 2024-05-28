@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almaty Code Cup</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="maincontent">
+
+            <section class="hero">
+                <ul class="hero__link-list">
+                    <li class="hero__link-list-el">
+                        <a href="https://t.me/AlmatyCodeCup" class="hero__btn"><img class="hero__btn-img"
+                                src="../images/iconmonstr-telegram-1.svg" alt="Telegram logo"></a>
+                    </li>
+                    <li class="hero__link-list-el">
+                        <a href="https://www.instagram.com/acc.rocks?igsh=MWRlbmxrdWJibDg5bQ%3D%3D&utm_source=qr"
+                            class="hero__btn"><img class="hero__btn-img" src="../images/iconmonstr-instagram-11.svg"
+                                alt="Instagram logo"></a>
+                    </li>
+                    <li class="hero__link-list-el">
+                        <a href="#" class="hero__btn" id="langBtn"><img class="hero__btn-img"
+                                src="../images/globe-grid-svgrepo-com.svg" alt="Instagram logo"></a>
+                        <div class="hero__lang" id="langMenu">
+                            <a class="hero__lang-btn" href="#" data-lang="eng">English</a>
+                            <a class="hero__lang-btn" href="#" data-lang="rus">Русский</a>
+                            <a class="hero__lang-btn" href="#" data-lang="kaz">Қазақша</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="container hero__container">
+                    <div class="hero__block">
+                        <ul class="hero__naming">
+                            <li class="hero__name hidden">Almaty</li>
+                            <li class="hero__name hero__name--mid hidden">Code</li>
+                            <li class="hero__name hidden">Cup</li>
+                        </ul>
+
+                        <div class="hero__timer hidden delay">
+                            <div class="timer--el1"></div>
+                            <div class="timer--el2"></div>
+                            <div class="timer">
+                                <div class="timer__title">Until the end</div>
+                                <div class="timer__title">of registration:</div>
+                                <div class="timer__countdown">
+                                    <p class="timer__num" id="days">00</p>:<p class="timer__num" id="hours">00</p>:<p
+                                        class="timer__num" id="minutes">00</p>:<p class="timer__num" id="seconds">00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__block">
+                        <h2 class="hero__title title title--blue">About the Competition</h2>
+                        <div class="hero__text hidden slide-in-left">
+                            <p>
+                                ACC combines the uniqueness of a competition for 7-11(12) grade students with the ICPC
+                                team competition format in solving Olympiad problems in computer science.
+                            </p>
+                        </div>
+
+                        <a href="https://bcedu.kz/acc" class="hero__button button button--black">Register</a>
+                    </div>
+
+                </div>
+                <div class="hero__dec--star"></div>
+                <div class="hero__dec--star"></div>
+            </section>
+
+            <section class="steps">
+                <div class="steps__dec"></div>
+                <div class="steps__dec"></div>
+                <div class="container steps__container">
+                    <h2 class="steps__title title">Participation <span class="borbox">Stages</span></h2>
+                    <ul class="steps__list">
+                        <li class="steps__item hidden scroll-animation">
+                            <div class="steps__num">
+                                <p>1</p>
+                            </div>
+                            <div class="steps__text">
+                                <p>
+                                    <span class="highlight--blue">Registration</span> will last until June 1, 2024,
+                                    23:59 Almaty time (UTC+5).
+                                </p>
+                            </div>
+                        </li>
+                        <li class="steps__item hidden scroll-animation">
+                            <div class="steps__num">
+                                <p>2</p>
+                            </div>
+                            <div class="steps__text">
+                                <p>
+                                    The qualifying round will be held online with a proctoring system on <span
+                                        class="highlight--blue">June 13, 2024, from 12:00 to 17:00</span> Almaty time
+                                    (UTC+5).
+                                </p>
+                            </div>
+                        </li>
+                        <li class="steps__item hidden scroll-animation">
+                            <div class="steps__num">
+                                <p>3</p>
+                            </div>
+                            <div class="steps__text">
+                                <p>
+                                    The <span class="highlight--blue">final on-site round</span> will be held on July
+                                    20, 2024, at the PhysTech school.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="faq">
+                <div class="container faq__container">
+                    <div class="faq__title">FAQ</div>
+                    <div class="faq__subtitle">Frequently Asked Questions</div>
+                    <ul class="faq__list">
+                        <li class="faq__item">
+                            <div class="faq__question">Who can participate?</div>
+                            <div class="faq__answer">Students from grades 7-12 from any schools, cities, and countries
+                                can participate in a team of no more than 3 people!
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__question">How many teams will make it to the final?</div>
+                            <div class="faq__answer">The top 40 teams from the qualifying round will advance to the
+                                final.
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__question">What is the ICPC format?</div>
+                            <div class="faq__answer">Each team gets one computer and 8 to 13 problems to solve in 5
+                                hours. The winning team is the one with the most correctly solved problems and the least
+                                penalty time for each problem and unsuccessful attempts. <a
+                                    href="https://codeforces.com/contestInvitation/f6319d2ed67a3e9a6d8af5b1b58b2b15cf4c802a"
+                                    class="faq__link">Last year's problems can be found here.</a></div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__question">Who creates the problems?</div>
+                            <div class="faq__answer">The problems for the tournament are created by participants and
+                                winners of the most prestigious international and republican Olympiads, such as IOI,
+                                IMC, VK Cup, APIO, IZhO, ICPC World Finals, NEF, VKOSHP, Eurasian Informatics Olympiad,
+                                and ROI.</div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__question">How will the selection process be conducted?</div>
+                            <div class="faq__answer">The qualifying round of the Olympiad will be held online with a
+                                proctoring system. This means that teammates can communicate through Discord, Skype,
+                                Teamspeak (and others), but cannot communicate with participants from other teams. Each
+                                participant will need to provide access to their microphone and screen in the proctoring
+                                system to check academic integrity.</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="partners">
+                <div class="container">
+                    <div class="partners__title title">Tournament Partners</div>
+                    <div class="swiper-container partners__list">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide partners__item"><a href="https://www.instagram.com/fiztex.kz/"
+                                    class="partners__link-a"><img src="../images/fiztech.png" alt="Partner_PhysTech"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="https://cpfed.kz/ru/"
+                                    class="partners__link-a"><img src="../images/cpfed.png" alt="Partner_cpfed"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="https://kbtu.edu.kz/ru/"
+                                    class="partners__link-a"><img
+                                        src="../images/KBTU_LOGO_Horizontal_Defis_Blue_RGB.png" alt="Partner_KBTU"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="http://www.mathncode.kz/"
+                                    class="partners__link-a"><img src="../images/m&c_logo.png" alt="Partner M&C"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="https://yandex.kz/"
+                                    class="partners__link-a"><img src="../images/Yandex_logo.png" alt="Partner Yandex"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="https://www.myextra.kz/"
+                                    class="partners__link-a"><img src="../images/MyExtra-logo.png" alt="Partner MyExtra"
+                                        class="partners__img"></a></div>
+                            <!-- Duplicate slides to ensure loop functionality -->
+                            <div class="swiper-slide partners__item"><a href="https://www.instagram.com/fiztex.kz/"
+                                    class="partners__link-a"><img src="../images/fiztech.png" alt="Partner_PhysTech"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="https://cpfed.kz/ru/"
+                                    class="partners__link-a"><img src="../images/cpfed.png" alt="Partner_cpfed"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="https://kbtu.edu.kz/ru/"
+                                    class="partners__link-a"><img
+                                        src="../images/KBTU_LOGO_Horizontal_Defis_Blue_RGB.png" alt="Partner_KBTU"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="http://www.mathncode.kz/"
+                                    class="partners__link-a"><img src="../images/m&c_logo.png" alt="Partner M&C"
+                                        class="partners__img"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer-container">
+                <div class="footer__dec--scheme"></div>
+                <div class="footer__dec--star"></div>
+                <div class="footer__dec--star"></div>
+                <div class="container footer">
+                    <img src="../images/footer_logo.svg" alt="footer--logotype" class="footer__logo">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="https://bc-pf.org/docs/npa/regulations_codecups.pdf"
+                                class="footer__link button button--black">Regulations</a>
+                        </li>
+                        <li class="footer__item"><a href="https://bc-pf.org/docs/npa/reglament_acc24.pdf"
+                                class="footer__link button button--blue">Rules</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link button button--black">Result</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__text">
+                        <p>The site is hosted by "Beyond Curriculum" Foundation</p>
+                    </div>
+                </div>
+
+                <nav class="footer__socials">
+                </nav>
+
+                <div class="footer__subtext">For all inquiries: <a class="footer__post-link"
+                        href="mailto:d.tatar@acc.bc-pf.org"> d.tatar@acc.bc-pf.org</a></div>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- DO NOT TOUCH, IT WILL KILL YOU -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="../scripts/timer.js"></script>
+    <script src="../scripts/faq-menu.js"></script>
+    <script src="../scripts/custom-swiper.js"></script>
+    <script src="../scripts/observer.js"></script>
+    <script src="../scripts/lang-change.js"></script>
+</body>
+
+</html>
