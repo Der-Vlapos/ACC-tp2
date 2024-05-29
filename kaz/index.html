@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almaty Code Cup</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="maincontent">
+
+            <section class="hero">
+                <ul class="hero__link-list">
+                    <li class="hero__link-list-el">
+                        <a href="https://t.me/AlmatyCodeCup" class="hero__btn"><img class="hero__btn-img"
+                                src="../images/iconmonstr-telegram-1.svg" alt="Telegram logo"></a>
+                    </li>
+                    <li class="hero__link-list-el">
+                        <a href="https://www.instagram.com/acc.rocks?igsh=MWRlbmxrdWJibDg5bQ%3D%3D&utm_source=qr"
+                            class="hero__btn"><img class="hero__btn-img" src="../images/iconmonstr-instagram-11.svg"
+                                alt="Instagram logo"></a>
+                    </li>
+                    <li class="hero__link-list-el">
+                        <a href="#" class="hero__btn" id="langBtn"><img class="hero__btn-img"
+                                src="../images/globe-grid-svgrepo-com.svg" alt="Instagram logo"></a>
+                        <div class="hero__lang" id="langMenu">
+                            <a class="hero__lang-btn" href="#" data-lang="eng">English</a>
+                            <a class="hero__lang-btn" href="#" data-lang="rus">Русский</a>
+                            <a class="hero__lang-btn" href="#" data-lang="kaz">Қазақша</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="container hero__container">
+                    <div class="hero__block">
+                        <ul class="hero__naming">
+                            <li class="hero__name hidden">Almaty</li>
+                            <li class="hero__name hero__name--mid hidden">Code</li>
+                            <li class="hero__name hidden">Cup</li>
+                        </ul>
+
+                        <div class="hero__timer hidden delay">
+                            <div class="timer--el1"></div>
+                            <div class="timer--el2"></div>
+                            <div class="timer">
+                                <div class="timer__title">Тіркелудің</div>
+                                <div class="timer__title">аяқталуына дейін:</div>
+                                <div class="timer__countdown">
+                                    <p class="timer__num" id="days">00</p>:<p class="timer__num" id="hours">00</p>:<p
+                                        class="timer__num" id="minutes">00</p>:<p class="timer__num" id="seconds">00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__block">
+                        <h2 class="hero__title title title--blue">Байқау туралы</h2>
+                        <div class="hero__text hidden slide-in-left">
+                            <p>
+                                ACC 7-11(12) сынып оқушыларына арналған бірегей байқауды және олимпиадалық тапсырмаларды
+                                шешуде ICPC командалық жарыс форматын біріктіреді.
+                            </p>
+                        </div>
+
+                        <a href="https://bcedu.kz/acc" class="hero__button button button--black">Тіркелу</a>
+                    </div>
+
+                </div>
+                <div class="hero__dec--star"></div>
+                <div class="hero__dec--star"></div>
+            </section>
+
+            <section class="steps">
+                <div class="steps__dec"></div>
+                <div class="steps__dec"></div>
+                <div class="container steps__container">
+                    <h2 class="steps__title title">Қатысу <span class="borbox">кезеңдері</span></h2>
+                    <ul class="steps__list">
+                        <li class="steps__item hidden scroll-animation">
+                            <div class="steps__num">
+                                <p>1</p>
+                            </div>
+                            <div class="steps__text">
+                                <p>
+                                    <span class="highlight--blue">Тіркелу</span> 2024 жылдың 1 маусымына дейін, Алматы
+                                    уақыты бойынша 23:59 (UTC+5) жалғасады.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="steps__item hidden scroll-animation">
+                            <div class="steps__num">
+                                <p>2</p>
+                            </div>
+                            <div class="steps__text">
+                                <p>
+                                    Іріктеу кезеңі онлайн режимінде прокторинг жүйесімен <span
+                                        class="highlight--blue">2024 жылдың 13 маусымында, 12:00-17:00</span> аралығында
+                                    Алматы уақыты бойынша (UTC+5) өтеді.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="steps__item hidden scroll-animation">
+                            <div class="steps__num">
+                                <p>3</p>
+                            </div>
+                            <div class="steps__text">
+                                <p>
+                                    <span class="highlight--blue">Финалдық кезең</span> 2024 жылдың 20 шілдесінде
+                                    PhysTech мектебінде өтеді.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="faq">
+                <div class="container faq__container">
+                    <div class="faq__title">FAQ</div>
+                    <div class="faq__subtitle">Жиі қойылатын сұрақтар</div>
+                    <ul class="faq__list">
+                        <li class="faq__item">
+                            <div class="faq__question">Кім қатыса алады?</div>
+                            <div class="faq__answer">7-12 сынып оқушылары кез келген мектептерден, қалалардан және
+                                елдерден қатыса алады, командада ең көп дегенде 3 адам болуы керек!
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__question">Қанша команда финалға өтеді?</div>
+                            <div class="faq__answer">Іріктеу кезеңінің нәтижелері бойынша 40 үздік команда финалға
+                                өтеді.
+                            </div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__question">ICPC форматы дегеніміз не?</div>
+                            <div class="faq__answer">Әр команда бір компьютер және 8-13 тапсырма алады, оларды 5 сағат
+                                ішінде шешу керек. Жеңімпаз команда - ең көп дұрыс шешілген тапсырмалар саны және әрбір
+                                тапсырма мен сәтсіз әрекеттер үшін ең аз айып уақыты бар команда. <a
+                                    href="https://codeforces.com/contestInvitation/f6319d2ed67a3e9a6d8af5b1b58b2b15cf4c802a"
+                                    class="faq__link">Өткен жылғы тапсырмалар осында табуға болады.</a></div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__question">Тапсырмаларды кім жасайды?</div>
+                            <div class="faq__answer">Турнирге арналған тапсырмалар IOI, IMC, VK Cup, APIO, IZhO, ICPC
+                                World Finals, NEF, VKOSHP, Еуразиялық информатика олимпиадасы және РОИ сияқты ең беделді
+                                халықаралық және республикалық олимпиадаларға қатысушылар мен жеңімпаздар тарапынан
+                                жасалады.</div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__question">Іріктеу қалай өтеді?</div>
+                            <div class="faq__answer">Олимпиаданың іріктеу кезеңі прокторинг жүйесімен онлайн форматта
+                                өтеді. Бұл дегеніміз, командаластар Discord, Skype, Teamspeak (және т.б.) арқылы сөйлесе
+                                алады, бірақ басқа командалардың қатысушыларымен сөйлесе алмайды. Әр қатысушы прокторинг
+                                жүйесінде академиялық адалдықты тексеру үшін өз микрофонына және экранына қолжетімділік
+                                беруі керек.</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="partners">
+                <div class="container">
+                    <div class="partners__title title">Турнир серіктестері</div>
+                    <div class="swiper-container partners__list">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide partners__item"><a href="https://www.instagram.com/fiztex.kz/"
+                                    class="partners__link-a"><img src="../images/fiztech.png" alt="Partner_PhysTech"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="https://cpfed.kz/ru/"
+                                    class="partners__link-a"><img src="../images/cpfed.png" alt="Partner_cpfed"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="https://kbtu.edu.kz/ru/"
+                                    class="partners__link-a"><img
+                                        src="../images/KBTU_LOGO_Horizontal_Defis_Blue_RGB.png" alt="Partner_KBTU"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="http://www.mathncode.kz/"
+                                    class="partners__link-a"><img src="../images/m&c_logo.png" alt="Partner M&C"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="https://yandex.kz/"
+                                    class="partners__link-a"><img src="../images/Yandex_logo.png" alt="Partner Yandex"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="https://www.myextra.kz/"
+                                    class="partners__link-a"><img src="../images/MyExtra-logo.png" alt="Partner MyExtra"
+                                        class="partners__img"></a></div>
+                            <!-- Duplicate slides to ensure loop functionality -->
+                            <div class="swiper-slide partners__item"><a href="https://www.instagram.com/fiztex.kz/"
+                                    class="partners__link-a"><img src="../images/fiztech.png" alt="Partner_PhysTech"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="https://cpfed.kz/ru/"
+                                    class="partners__link-a"><img src="../images/cpfed.png" alt="Partner_cpfed"
+                                        class="partners__img"></a></div>
+                            <div class="swiper-slide partners__item"><a href="https://kbtu.edu.kz/ru/"
+                                    class="partners__link-a"><img
+                                        src="../images/KBTU_LOGO_Horizontal_Defis_Blue_RGB.png" alt="Partner_KBTU"
+                                        class="partners__img"></а>
+                            </div>
+                            <div class="swiper-slide partners__item"><a href="http://www.mathncode.kz/"
+                                    class="partners__link-a"><img src="../images/m&c_logo.png" alt="Partner M&C"
+                                        class="partners__img"></а>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer-container">
+                <div class="footer__dec--scheme"></div>
+                <div class="footer__dec--star"></div>
+                <div class="footer__dec--star"></div>
+                <div class="container footer">
+                    <img src="../images/footer_logo.svg" alt="footer--logotype" class="footer__logo">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="https://bc-pf.org/docs/npa/regulations_codecups.pdf"
+                                class="footer__link button button--black">Положение</a>
+                        </li>
+                        <li class="footer__item"><a href="https://bc-pf.org/docs/npa/reglament_acc24.pdf"
+                                class="footer__link button button--blue">Регламент</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link button button--black">Результат</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__text">
+                        <p>Сайт "Beyond Curriculum" қорымен орналастырылған</p>
+                    </div>
+                </div>
+
+                <nav class="footer__socials">
+                </nav>
+
+                <div class="footer__subtext">Барлық сұрақтар бойынша: <a class="footer__post-link"
+                        href="mailto:d.tatar@acc.bc-pf.org"> d.tatar@acc.bc-pf.org</a></div>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- ТИСПЕ, ӨЛТІРЕДІ -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="../scripts/timer.js"></script>
+    <script src="../scripts/faq-menu.js"></script>
+    <script src="../scripts/custom-swiper.js"></script>
+    <script src="../scripts/observer.js"></script>
+    <script src="../scripts/lang-change.js"></script>
+</body>
+
+</html>
